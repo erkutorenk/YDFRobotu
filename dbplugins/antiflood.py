@@ -49,10 +49,13 @@ async def _(event):
     else:
         await borg.send_message(
             entity=event.chat_id,
-            message="""**Automatic AntiFlooder**
-[User](tg://user?id={}) has been automatically restricted
-because he reached the defined flood limit.""".format(event.message.from_id),
+            message="""[Sayın Üye,](tg://user?id={})\n\n__Üst üste çok fazla sayıda mesaj gönderdiğiniz için mesaj göndermeniz kısıtlandı, bizimle özelden iletişime geçebilirsiniz.__""".format(event.message.from_id),
             reply_to=event.message.id
+        )
+        await asyncio.sleep(100)
+        await no_admin_privilege_message.edit(
+            "[Kurallar](http://telegra.ph/Yabanc%C4%B1-DiziFilm-Grup-Kurallar%C4%B1-10-13)",
+            link_preview=True
         )
 
 
