@@ -9,7 +9,7 @@ import sql_helpers.antiflood_sql as sql
 CHAT_FLOOD = sql.__load_flood_settings()
 # warn mode for anti flood
 ANTI_FLOOD_WARN_MODE = ChatBannedRights(
-    until_date=None,
+    until_date=True,
     view_messages=None,
     send_messages=True
 )
