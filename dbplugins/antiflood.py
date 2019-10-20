@@ -47,7 +47,7 @@ async def _(event):
             link_preview=False
         )
     else:
-        await borg.send_message(
+        no_admin_privilege_message = await borg.send_message(
             entity=event.chat_id,
             message="""[Sayın Üye,](tg://user?id={})\n\n__Üst üste çok fazla sayıda mesaj gönderdiğiniz için mesaj göndermeniz kısıtlandı, bizimle özelden iletişime geçebilirsiniz.__""".format(event.message.from_id),
             reply_to=event.message.id
