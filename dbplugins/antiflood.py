@@ -41,10 +41,10 @@ async def _(event):
 `{}`""".format(event.message.from_id, str(e)),
             reply_to=event.message.id
         )
-        await asyncio.sleep(10)
+        await asyncio.sleep(100)
         await no_admin_privilege_message.edit(
-            "https://t.me/keralagram/724970",
-            link_preview=False
+            "[Kurallar](http://telegra.ph/Yabanc%C4%B1-DiziFilm-Grup-Kurallar%C4%B1-10-13)",
+            link_preview=True
         )
     else:
         no_admin_privilege_message = await borg.send_message(
