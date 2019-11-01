@@ -43,7 +43,7 @@ async def _(event):
         )
         await asyncio.sleep(100)
         await no_admin_privilege_message.edit(
-            "[Kurallar](http://telegra.ph/Yabanc%C4%B1-DiziFilm-Grup-Kurallar%C4%B1-10-13)",
+            "[Kurallar](http://telegra.ph/Yabanc%C4%B1-DiziFilm-Grup-Kuralları-10-13)",
             link_preview=True
         )
     else:
@@ -54,7 +54,7 @@ async def _(event):
         )
         await asyncio.sleep(100)
         await no_admin_privilege_message.edit(
-            "[Kurallar](http://telegra.ph/Yabanc%C4%B1-DiziFilm-Grup-Kurallar%C4%B1-10-13)",
+            "[Kurallar](http://telegra.ph/Yabanc%C4%B1-DiziFilm-Grup-Kuralları-10-13)",
             link_preview=True
         )
 
