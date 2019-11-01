@@ -36,9 +36,9 @@ async def _(event):
         no_admin_privilege_message = await borg.send_message(
             entity=event.chat_id,
             message="""**Automatic AntiFlooder**
-@admin [User](tg://user?id={}) is flooding this chat.
 
-`{}`""".format(event.message.from_id, str(e)),
+
+""".format(event.message.from_id, str(e)),
             reply_to=event.message.id
         )
         await asyncio.sleep(100)
