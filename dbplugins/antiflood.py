@@ -35,7 +35,7 @@ async def _(event):
     except Exception as e:  # pylint:disable=C0103,W0703
         no_admin_privilege_message = await borg.send_message(
             entity=event.chat_id,
-            message="""Lütfen art arda mesaj atma""".format(event.message.from_id, str(e)),
+            message="""""".format(event.message.from_id, str(e)),
             reply_to=event.message.id
         )
         await asyncio.sleep(100)
