@@ -46,7 +46,7 @@ async def _(event):
     else:
         no_admin_privilege_message = await borg.send_message(
             entity=event.chat_id,
-            message="""[Sayın Üye,](tg://user?id={})\n\n__Üst üste çok fazla sayıda mesaj gönderdiğiniz için mesaj göndermeniz kısıtlandı, bizimle özelden iletişime geçebilirsiniz.__""".format(event.message.from_id),
+            message="""[Sayın Üye,](tg://user?id={})\n\n__Üst üste çok fazla sayıda mesaj gönderdiğiniz için mesaj göndermeniz kısıtlandı.\nmesajları daha toplu bir şekilde göndermeye dikkat edelim, bu grupta tekrar yazmak istiyorsanız bizimle özelden iletişime geçebilirsiniz.\n\nİletişim: @dizifilms__""".format(event.message.from_id),
             reply_to=event.message.id
         )
         await asyncio.sleep(100)
